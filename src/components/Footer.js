@@ -2,14 +2,16 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <footer
-      style={{
-        marginTop: `2rem`,
-      }}
-    >
-      © {new Date().getFullYear()}, Built with
-      {` `}
-      <a href="https://www.gatsbyjs.com">Gatsby</a>
+    <footer>
+      <div className="container">
+        <div className="center">
+          <span>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.com">Gatsby</a>
+          </span>
+        </div>
+      </div>
     </footer>
   )
 }
