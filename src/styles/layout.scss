@@ -1,0 +1,43 @@
+@import "./variables.scss";
+
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  p {
+    line-height: 1.563rem;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $site-width;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h2 {
+  font-size: 1.563rem;
+  font-weight: medium;
+}
