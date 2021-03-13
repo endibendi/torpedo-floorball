@@ -18,10 +18,25 @@ const IndexPage = () => (
         loading="eager"
         layout="fullWidth"
         fadeIn="false"
+        quality="80"
       />
-      <p>
-        <Link to="/floorball/">Go to floorball page</Link> <br />
-      </p>
+      <p>Welcome to your new Gatsby site.</p>
+      <p>Now go build something great.</p>
+      <p>Welcome to your new Gatsby site.</p>
+      <p>Now go build something great.</p>
+      <p>Welcome to your new Gatsby site.</p>
+      <p>Now go build something great.</p>
+
+      <Link to="/floorball/">Go to floorball page</Link>
+      <div>
+        <p>Welcome to your new Gatsby site.</p>
+        <p>Now go build something great.</p>
+        <p>Welcome to your new Gatsby site.</p>
+        <p>Now go build something great.</p>
+        <p>Welcome to your new Gatsby site.</p>
+        <p>Now go build something great.</p>
+      </div>
+      <Link to="/floorball/">Go to floorball page</Link>
     </div>
   </Layout>
 )
