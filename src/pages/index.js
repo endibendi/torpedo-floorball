@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -11,6 +12,13 @@ const IndexPage = () => (
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
+      <StaticImage
+        src="../images/120046377_3380784328685238_4277071382816534389_o.jpg"
+        alt="a csapat"
+        loading="eager"
+        layout="fullWidth"
+        fadeIn="false"
+      />
       <p>
         <Link to="/floorball/">Go to floorball page</Link> <br />
       </p>
