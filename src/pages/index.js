@@ -9,15 +9,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="container">
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
+      <h1>Torpedo Floorball</h1>
       <StaticImage
         src="../images/120046377_3380784328685238_4277071382816534389_o.jpg"
         alt="a csapat"
         loading="eager"
         layout="fullWidth"
-        fadeIn="false"
         quality="80"
       />
       <p>Welcome to your new Gatsby site.</p>
