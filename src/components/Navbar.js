@@ -9,7 +9,7 @@ const Navbar = ({ toggle }) => {
         <div className="nav-center">
           <h3 className="nav-logo">
             <Link to="/">
-              <StaticImage src="../images/logo.svg" />
+              <StaticImage src="../images/logo.svg" alt="logo" />
             </Link>
           </h3>
           <div className="links-container">
@@ -25,7 +25,7 @@ const Navbar = ({ toggle }) => {
             className="toggle-btn"
             onClick={toggle}
           >
-            <StaticImage src="../images/Hamburger.svg" />
+            <StaticImage src="../images/Hamburger.svg" alt="menu icon" />
           </button>
         </div>
       </div>
