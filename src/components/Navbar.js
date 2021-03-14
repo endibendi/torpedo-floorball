@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Navbar = ({ toggle }) => {
   return (
@@ -7,7 +8,9 @@ const Navbar = ({ toggle }) => {
       <div className="container">
         <div className="nav-center">
           <h3 className="nav-logo">
-            <Link to="/">Navbar Logo</Link>
+            <Link to="/">
+              <StaticImage src="../images/logo.svg" />
+            </Link>
           </h3>
           <div className="links-container">
             <ul>
@@ -22,7 +25,7 @@ const Navbar = ({ toggle }) => {
             className="toggle-btn"
             onClick={toggle}
           >
-            kinyit
+            <StaticImage src="../images/Hamburger.svg" />
           </button>
         </div>
       </div>
