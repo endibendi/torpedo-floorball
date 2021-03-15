@@ -1,0 +1,49 @@
+@import "../styles/variables.scss";
+
+// Navbar
+.navbar {
+  background-color: $main-grey;
+  min-height: 50px;
+}
+
+.toggle-btn {
+  background-color: transparent;
+}
+
+.menuIcon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: $primary-color;
+}
+
+.nav-logo {
+  padding: 1rem 0;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+
+  .links-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .toggle-btn {
+    display: none;
+  }
+
+  .nav-center .links-container {
+    display: block;
+
+    ul {
+      display: flex;
+      li {
+        padding: 1rem;
+      }
+    }
+  }
+}

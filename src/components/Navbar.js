@@ -1,18 +1,20 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { FaBars } from "react-icons/fa"
+import * as styles from "./navbar.module.scss"
 
 const Navbar = ({ toggle }) => {
   return (
-    <nav className="navbar">
+    <nav className={styles.navbar}>
       <div className="container">
-        <div className="nav-center">
-          <h3 className="nav-logo">
+        <div className={styles.navCenter}>
+          <h3 className={styles.navLogo}>
             <Link to="/">
               <StaticImage src="../images/logo.svg" alt="logo" />
             </Link>
           </h3>
-          <div className="links-container">
+          <div className={styles.linksContainer}>
             <ul>
               <li>Link1</li>
               <li>Link1</li>
@@ -22,10 +24,10 @@ const Navbar = ({ toggle }) => {
           </div>
           <button
             aria-label="menu toggle button"
-            className="toggle-btn"
+            className={styles.toggleBtn}
             onClick={toggle}
           >
-            <StaticImage src="../images/Hamburger.svg" alt="menu icon" />
+            <FaBars className={styles.menuIcon} />
           </button>
         </div>
       </div>

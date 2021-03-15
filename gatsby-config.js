@@ -4,9 +4,6 @@ module.exports = {
     description: `Starter for my gatsby projects`,
     author: `@sewbsite`,
   },
-  flags: {
-    THE_FLAG: false,
-  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
