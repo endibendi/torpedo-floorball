@@ -1,14 +1,56 @@
 @import "../styles/variables";
 
 footer {
-  padding: 1rem;
   display: block;
-  background-color: $main-blue;
+  background-color: $primary-color;
   width: 100%;
 
   .center {
     margin: 0 auto;
     text-align: center;
     align-self: center;
+  }
+
+  .copy {
+    font-weight: 500;
+    font-size: 12px;
+    color: $dark-font-color;
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 40px;
+    color: $light-font-color;
+
+    .footer-social svg {
+      height: 51px;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      padding-bottom: 16px;
+    }
+  }
+
+  .footer-info-container {
+    padding-left: 10px;
+
+    h5 {
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16.41px;
+    }
+
+    .pt8 {
+      padding-top: 8px;
+    }
   }
 }
