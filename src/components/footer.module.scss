@@ -7,6 +7,7 @@ footer {
 
   .center {
     margin: 0 auto;
+    padding: 40px 0;
     text-align: center;
     align-self: center;
   }
@@ -24,8 +25,13 @@ footer {
     padding-top: 40px;
     color: $light-font-color;
 
-    .footer-social svg {
-      height: 51px;
+    .footer-social {
+      line-height: 0;
+
+      svg {
+        width: 51px;
+        height: 49px;
+      }
     }
 
     h4 {
