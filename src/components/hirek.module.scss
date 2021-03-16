@@ -30,5 +30,40 @@ article {
     padding: 16px;
     position: absolute;
     color: $light-font-color;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 31px auto;
+  height: 35px;
+  font-size: 24px;
+  color: $secondary-dark-color;
+  text-align: center;
+
+  .number-container {
+    display: flex;
+    flex-direction: row;
+
+    span {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-weight: 500;
+    }
+
+    .active {
+      border-radius: 6px;
+      border: 1px solid #a76376;
+    }
+  }
+
+  .slider-icon {
+    height: 40px;
+    width: 40px;
   }
 }
