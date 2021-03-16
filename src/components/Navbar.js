@@ -7,13 +7,11 @@ import * as styles from "./navbar.module.scss"
 const Navbar = ({ toggle }) => {
   return (
     <nav className={styles.navbar}>
-      <div className="container">
+      <div className={styles.navContainer}>
         <div className={styles.navCenter}>
-          <h3 className={styles.navLogo}>
-            <Link to="/">
-              <StaticImage src="../images/logo.svg" alt="logo" />
-            </Link>
-          </h3>
+          <Link to="/" className={styles.navLogo}>
+            <StaticImage src="../images/logo.svg" alt="logo" />
+          </Link>
           <div className={styles.linksContainer}>
             <ul>
               <li>Link1</li>

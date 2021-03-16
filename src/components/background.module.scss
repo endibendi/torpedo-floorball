@@ -1,6 +1,5 @@
 .hero-wrapper {
   z-index: -1;
-  margin-top: -50px;
 }
 
 .bcg {
@@ -8,12 +7,22 @@
   min-height: 350px;
   background: rgba(29, 9, 15, 0.2);
   position: relative;
-  background-position: -258px 50%;
+  background-position: -288px 50%;
   background-repeat: no-repeat;
   background-size: 200%;
 }
 
+@media screen and (min-width: 700px) {
+  .bcg {
+    min-height: 610px;
+  }
+}
+
 @media screen and (min-width: 980px) {
+  .hero-wrapper {
+    margin-top: -64px;
+  }
+
   .bcg {
     min-height: 810px;
   }
