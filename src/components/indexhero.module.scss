@@ -1,0 +1,14 @@
+@import "../styles/variables.scss";
+
+h1 {
+  color: $light-font-color;
+  font-weight: 800;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.64);
+}
+
+.flex-wrapper {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  align-items: flex-end;
+}
