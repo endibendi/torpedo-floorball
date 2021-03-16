@@ -32,6 +32,10 @@
 }
 
 @media screen and (min-width: 980px) {
+  .navbar {
+    background-color: transparent;
+  }
+
   .toggle-btn {
     display: none;
   }

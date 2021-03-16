@@ -12,9 +12,11 @@ body {
   font-family: "roboto", sans-serif;
   font-size: 1rem;
   background-color: $main-grey;
+  color: $dark-font-color;
 
   p {
-    line-height: 1.563rem;
+    line-height: 133%;
+    letter-spacing: 0.15px;
   }
 }
 
@@ -39,6 +41,7 @@ h1 {
 }
 
 h2 {
+  font-family: Raleway;
   font-size: 1.563rem;
   font-weight: medium;
 }
