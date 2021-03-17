@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import * as styles from "./sidebar.module.scss"
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -16,7 +17,9 @@ const Sidebar = ({ isOpen, toggle }) => {
         </button>
         <div className={styles.linksContainer}>
           <ul>
-            <li>Link1</li>
+            <li>
+              <Link to="/floorball">Floorball</Link>
+            </li>
             <li>Link1</li>
             <li>Link1</li>
             <li>Link1</li>

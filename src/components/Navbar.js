@@ -14,7 +14,9 @@ const Navbar = ({ toggle }) => {
           </Link>
           <div className={styles.linksContainer}>
             <ul>
-              <li>Link1</li>
+              <li>
+                <Link to="/floorball">Floorball</Link>
+              </li>
               <li>Link1</li>
               <li>Link1</li>
               <li>Link1</li>
