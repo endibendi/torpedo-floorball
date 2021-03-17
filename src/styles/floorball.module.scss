@@ -1,0 +1,24 @@
+@import "./variables.scss";
+
+.floorball-section {
+  margin-top: 20px;
+}
+
+.floorball-wrapper {
+  min-height: 187px;
+  background-color: $primary-color;
+  clip-path: polygon(0% 0%, 100% 30%, 100% 80%, 0% 100%);
+
+  p {
+    padding-top: 37px;
+    color: $light-font-color;
+  }
+
+  .floorball-content {
+    display: flex;
+
+    .img {
+      z-index: 2;
+    }
+  }
+}

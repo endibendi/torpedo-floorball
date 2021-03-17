@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import Sidebar from "./Sidebar"
-import IndexHero from "./IndexHero"
 
 import "../styles/layout.scss"
 
@@ -19,7 +18,6 @@ const Layout = ({ children }) => {
     <>
       <div className="flex-container">
         <Navbar toggle={toggle} />
-        <IndexHero />
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <main>{children}</main>
         <Footer />

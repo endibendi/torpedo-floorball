@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import * as styles from "./sidebar.module.scss"
+import { FaTimes } from "react-icons/fa"
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -13,7 +14,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           className={styles.closeBtn}
           onClick={toggle}
         >
-          Becsuk
+          <FaTimes />
         </button>
         <div className={styles.linksContainer}>
           <ul>

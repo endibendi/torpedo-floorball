@@ -1,11 +1,13 @@
 @import "../styles/variables.scss";
 
-h1 {
-  font-size: 38px;
-  margin-bottom: 25px;
-  color: $light-font-color;
-  font-weight: 800;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.64);
+.index-hero {
+  h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: $light-font-color;
+    font-weight: 800;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.64);
+  }
 }
 
 .flex-wrapper {
