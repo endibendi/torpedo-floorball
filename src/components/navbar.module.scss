@@ -38,6 +38,15 @@
 
   .links-container {
     display: none;
+
+    li {
+      font-size: 26px;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 133%;
+      color: $light-font-color;
+      text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.65);
+    }
   }
 }
 
