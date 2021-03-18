@@ -23,7 +23,9 @@ const Sidebar = ({ isOpen, toggle }) => {
             </li>
             <li>Link1</li>
             <li>Link1</li>
-            <li>Link1</li>
+            <li>
+              <Link to="/kapcsolat">Kapcsolat</Link>
+            </li>
           </ul>
         </div>
       </div>

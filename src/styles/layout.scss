@@ -17,6 +17,7 @@ body {
   p {
     line-height: 133%;
     letter-spacing: 0.15px;
+    font-weight: 500;
   }
 }
 
@@ -36,6 +37,7 @@ a {
 h1 {
   color: $dark-font-color;
   margin-top: 20px;
+  margin-bottom: 31px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
@@ -48,6 +50,7 @@ h2 {
   font-size: 38px;
   font-weight: 800;
 }
+
 h3 {
   font-family: Raleway;
   font-size: 24px;
@@ -78,4 +81,18 @@ button {
 
 .toggle-btn {
   cursor: pointer;
+}
+
+// font media
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 65px;
+    line-height: 113px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h1 {
+    font-size: 96px;
+  }
 }

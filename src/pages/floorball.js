@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import * as styles from "../styles/floorball.module.scss"
 
-const SecondPage = () => (
+const Floorball = () => (
   <Layout>
     <SEO title="Floorball" />
     <div className="container">
@@ -72,4 +72,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Floorball
