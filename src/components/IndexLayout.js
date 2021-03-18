@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="flex-container">
-        <Navbar toggle={toggle} className="index-nav" />
+        <Navbar toggle={toggle} />
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <main>{children}</main>
         <Footer />
