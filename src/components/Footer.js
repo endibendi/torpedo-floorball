@@ -24,18 +24,17 @@ const Footer = () => {
               <FaFacebookSquare />
             </div>
           </div>
-          <div className={styles.ballContainer}>
-            <StaticImage
-              src="../images/floorballball.png"
-              alt="floorball labda"
-              className={styles.ballImg}
-            />
-          </div>
         </div>
         <div className={styles.center}>
           <span className={styles.copy}>
             © {new Date().getFullYear()} Torpedo Floorball
           </span>
+        </div>
+        <div className={styles.imgContainer}>
+          <StaticImage
+            src="../images/floorballball.png"
+            alt="floorball labda"
+          />
         </div>
       </div>
     </footer>
