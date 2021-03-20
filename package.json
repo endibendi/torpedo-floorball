@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "gatsby": "^3.0.4",
     "gatsby-background-image": "^1.5.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
