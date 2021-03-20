@@ -2,6 +2,9 @@
 
 // Navbar
 .navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
   z-index: 10;
   background-color: $main-grey;
   height: 64px;
@@ -9,7 +12,7 @@
   .nav-container {
     max-height: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 6px 20px 0 20px;
     max-width: $site-width;
   }
 }
@@ -24,13 +27,14 @@
   color: $primary-color;
 }
 
-.nav-logo svg {
-  // padding: 1rem 0;
-  background-color: transparent;
+.nav-logo {
+  svg {
+    // padding: 1rem 0;
+    background-color: transparent;
+  }
 }
 
 .nav-center {
-  margin-top: 10px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -50,23 +54,29 @@
 }
 
 @media screen and (min-width: 980px) {
-  .navbar {
-    background-color: transparent;
-  }
-
   .toggle-btn {
     display: none;
   }
 
+  .navbar .nav-container {
+    padding: 0 20px;
+  }
+
   .nav-center .links-container {
     display: block;
+    align-items: center;
+    align-content: center;
 
     ul {
       display: flex;
       li {
         padding: 1rem;
-        color: $light-font-color;
-        text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.65);
+        color: $primary-color;
+        font-weight: 600;
+
+        :hover {
+          color: lighten($color: $primary-color, $amount: 20);
+        }
       }
     }
   }

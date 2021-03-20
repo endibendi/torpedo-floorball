@@ -71,7 +71,11 @@ h3 {
 }
 
 main {
+  margin-top: 65px;
   flex: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 button {
@@ -81,6 +85,10 @@ button {
 
 .toggle-btn {
   cursor: pointer;
+}
+
+.active {
+  color: lighten($color: $primary-color, $amount: 20);
 }
 
 // font media

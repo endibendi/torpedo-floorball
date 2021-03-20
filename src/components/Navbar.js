@@ -15,16 +15,24 @@ const Navbar = ({ toggle }) => {
           <div className={styles.linksContainer}>
             <ul>
               <li>
-                <Link to="/">főoldal</Link>
+                <Link to="/" activeClassName="active">
+                  főoldal
+                </Link>
               </li>
               <li>
-                <Link to="/floorball">floorball</Link>
+                <Link to="/floorball" activeClassName="active">
+                  floorball
+                </Link>
               </li>
               <li>
-                <Link to="/csapat">a csapat</Link>
+                <Link to="/csapat" activeClassName="active">
+                  a csapat
+                </Link>
               </li>
               <li>
-                <Link to="/kapcsolat">kapcsolat</Link>
+                <Link to="/kapcsolat" activeClassName="active">
+                  kapcsolat
+                </Link>
               </li>
             </ul>
           </div>
