@@ -19,12 +19,24 @@ const Sidebar = ({ isOpen, toggle }) => {
         <div className={styles.linksContainer}>
           <ul>
             <li>
-              <Link to="/floorball">Floorball</Link>
+              <Link to="/" activeClassName="active">
+                főoldal
+              </Link>
             </li>
-            <li>Link1</li>
-            <li>Link1</li>
             <li>
-              <Link to="/kapcsolat">Kapcsolat</Link>
+              <Link to="/floorball" activeClassName="active">
+                floorball
+              </Link>
+            </li>
+            <li>
+              <Link to="/csapat" activeClassName="active">
+                a csapat
+              </Link>
+            </li>
+            <li>
+              <Link to="/kapcsolat" activeClassName="active">
+                kapcsolat
+              </Link>
             </li>
           </ul>
         </div>
