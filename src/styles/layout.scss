@@ -35,7 +35,7 @@ a {
 }
 
 h1 {
-  color: $dark-font-color;
+  color: $primary-color;
   margin-top: 20px;
   margin-bottom: 31px;
   font-family: Raleway;
@@ -46,6 +46,7 @@ h1 {
 }
 
 h2 {
+  color: $primary-color;
   font-family: Raleway;
   font-size: 38px;
   font-weight: 800;
