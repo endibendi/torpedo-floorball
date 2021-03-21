@@ -1,7 +1,27 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/node-apis/
- */
+const path = require("path")
 
-// You can delete this file if you're not using it
+// create pages dynamically
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+
+  const res = await graphql(`
+    query getPosts {
+      posts: allContentfulBlogPoszt {
+        nodes {
+          slug
+        }
+      }
+    }
+  `)
+
+  res.data.posts.nodes.forEach(post => {
+    createPage({
+      path: `/hirek/${post.slug}`,
+      component: path.resolve(`./src/templates/blogpost-template.js`),
+      context: {
+        slug: post.slug,
+      },
+    })
+  })
+}
