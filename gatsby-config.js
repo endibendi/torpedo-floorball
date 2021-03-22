@@ -20,8 +20,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby SE Starter`,
-    description: `Starter for my gatsby projects`,
+    title: `Torpedo Floorball`,
+    description: `A Torpedo Floorbal sport egyesület hivatalos honlapja.`,
     author: `@sewbsite`,
   },
   plugins: [
