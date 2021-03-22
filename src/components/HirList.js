@@ -18,7 +18,7 @@ const HirList = ({ posts = [] }) => {
               <article key={id} className="articleCard">
                 <GatsbyImage
                   image={postKep.gatsbyImageData}
-                  alt="article image alt"
+                  alt="blogposzt borító kép"
                   className={styles.articleImg}
                   objectFit="cover"
                   objectPosition="center 30%"
