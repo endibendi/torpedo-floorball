@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Layout from "../components/Layout"
+import { Layout } from "../components"
 import SEO from "../components/_seo"
 
 const blogpostTemplate = ({ data }) => {

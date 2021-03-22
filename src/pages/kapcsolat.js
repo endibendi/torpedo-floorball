@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from "../components/Layout"
+import { Layout } from "../components"
 import SEO from "../components/_seo"
 
 import * as styles from "../styles/kapcsolat.module.scss"
