@@ -20,6 +20,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
+    siteUrl,
     title: `Torpedo Floorball`,
     description: `A Torpedo Floorbal sport egyesület hivatalos honlapja.`,
     author: `@sewbsite`,
@@ -57,6 +58,27 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            policy: [{ userAgent: "*" }],
+          },
+          "branch-deploy": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+            sitemap: null,
+            host: null,
+          },
+          "deploy-preview": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+            sitemap: null,
+            host: null,
+          },
+        },
+      },
+    },
 
     // ----------- For PWA --------------
     // {
