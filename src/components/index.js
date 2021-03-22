@@ -1,4 +1,4 @@
-import Layout from "./Layout"
 import IndexHero from "./IndexHero"
+import Layout from "./Layout"
 import AllHir from "./AllHir"
-export { Layout, IndexHero, AllHir }
+export { IndexHero, AllHir, Layout }
