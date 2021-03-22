@@ -13,7 +13,6 @@ const HirList = ({ posts = [] }) => {
         <div className={styles.articleWrapper}>
           {posts.map(post => {
             const { id, title, postKep, slug, datum } = post
-            console.log(post)
 
             return (
               <article key={id} className="articleCard">
@@ -23,6 +22,7 @@ const HirList = ({ posts = [] }) => {
                   className={styles.articleImg}
                   objectFit="cover"
                   objectPosition="center 30%"
+                  quality="100"
                 />
                 <Link to={`/hirek/${slug}`} className={styles.infoLink}>
                   <div className={styles.info}>
@@ -35,7 +35,7 @@ const HirList = ({ posts = [] }) => {
           })}
         </div>
       </div>
-      <div className={styles.slider}>
+      {/* <div className={styles.slider}>
         <FaAngleLeft className={styles.sliderIcon} />
         <div className={styles.numberContainer}>
           <span>1</span>
@@ -43,7 +43,7 @@ const HirList = ({ posts = [] }) => {
           <span>3</span>
         </div>
         <FaAngleRight className={styles.sliderIcon} />
-      </div>
+      </div> */}
     </>
   )
 }
