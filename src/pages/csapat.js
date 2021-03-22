@@ -2,7 +2,6 @@ import * as React from "react"
 import { Layout } from "../components"
 import SEO from "../components/_seo"
 import { StaticImage } from "gatsby-plugin-image"
-
 import * as styles from "../styles/csapat.module.scss"
 
 const Csapat = () => (
