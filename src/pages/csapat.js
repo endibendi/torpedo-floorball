@@ -16,7 +16,7 @@ const Csapat = () => (
       <div className="container">
         <StaticImage
           src="../images/csapat.jpg"
-          alt="a csapat"
+          alt="kép a csapatról"
           objectFit="cover"
           objectPosition="center center"
           placeholder="tracedSVG"
