@@ -21,6 +21,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     siteUrl,
+    image: "/siteimage.jpg",
     title: `Torpedo Floorball`,
     description: `A Torpedo Floorbal sport egyesület hivatalos honlapja.`,
     author: `@sewbsite`,

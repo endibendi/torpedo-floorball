@@ -7,7 +7,6 @@ import * as styles from "../styles/csapat.module.scss"
 const Csapat = () => (
   <Layout>
     <SEO title="A csapat" />
-
     <div className="container">
       <h1>A csapat</h1>
     </div>
