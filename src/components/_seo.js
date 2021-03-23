@@ -51,6 +51,10 @@ function SEO({ description, lang, meta, title, image }) {
           content: image ? image : defaultImage,
         },
         {
+          name: `og:image`,
+          content: image ? image : defaultImage,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
