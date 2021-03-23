@@ -8,7 +8,7 @@ const query = graphql`
       nodes {
         title
         slug
-        datum
+        datum(formatString: "YYYY MM DD")
         id
         postKep {
           gatsbyImageData(
