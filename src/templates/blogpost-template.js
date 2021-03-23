@@ -12,8 +12,6 @@ const blogpostTemplate = ({ data }) => {
     postszoveg: { postszoveg },
   } = data.post
 
-  console.log(postKep.gatsbyImageData)
-
   return (
     <Layout>
       <SEO title={title} image={postKep.gatsbyImageData.images.fallback.src} />

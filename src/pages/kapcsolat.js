@@ -32,7 +32,7 @@ const Kapcsolat = () => (
           <div className={styles.contactWrapper}>
             <p>Csapattagok: 8000 forint / hó</p>
             <p>Egyéni edzés: 1500 forint / alkalom</p>
-            <p>Egyéni havi tagíj: 9000 forint / hó</p>
+            <p>Egyéni havi tagdíj: 9000 forint / hó</p>
           </div>
         </div>
         <div className={styles.terkep}>
