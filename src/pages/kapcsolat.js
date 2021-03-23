@@ -17,8 +17,14 @@ const Kapcsolat = () => (
             <h2>Felnőtt csapat</h2>
             <div className={styles.contactWrapper}>
               <p>Akcal Richárd csapatvezető</p>
-              <p>torpedo.floorball@gmail.com</p>
-              <p>+36 20 801 3032</p>
+              <p>
+                <a href="mailto:torpedo.floorball@gmail.com">
+                  torpedo.floorball@gmail.com
+                </a>
+              </p>
+              <p>
+                <a href="tel:+36208013032">+36 20 801 3032</a>
+              </p>
             </div>
           </div>
           <div className={styles.contactInfo}>
