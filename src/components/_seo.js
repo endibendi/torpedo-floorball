@@ -51,7 +51,11 @@ function SEO({ description, lang, meta, title, image }) {
           content: image ? image : defaultImage,
         },
         {
-          name: `og:image`,
+          name: `favicon`,
+          content: "./favicon.ico",
+        },
+        {
+          property: `og:image`,
           content: image ? image : defaultImage,
         },
         {
