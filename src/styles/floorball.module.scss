@@ -58,6 +58,12 @@ section .floorball-flex-container {
 }
 
 // media for ball in content:
+@media screen and (max-width: 600px) {
+  .img-container {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about-floorball p {
     max-width: 996px;
