@@ -21,7 +21,12 @@ const Footer = () => {
               </div>
             </div>
             <div className={styles.footerSocial}>
-              <FaFacebookSquare />
+              <a
+                href="https://www.facebook.com/torpedofloorball"
+                rel="noopener noreferrer nofollow"
+              >
+                <FaFacebookSquare />
+              </a>
             </div>
           </div>
         </div>

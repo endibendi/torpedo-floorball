@@ -21,7 +21,7 @@ const HirList = ({ posts = [] }) => {
                   alt="blogposzt borító kép"
                   className={styles.articleImg}
                   objectFit="cover"
-                  objectPosition="center 30%"
+                  objectPosition="center 40%"
                   quality="100"
                 />
                 <Link to={`/hirek/${slug}`} className={styles.infoLink}>

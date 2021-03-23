@@ -30,10 +30,12 @@ article {
     left: 0;
     right: 0;
     bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, #222 99%);
   }
 
   .info {
     bottom: 0;
+    width: 100%;
     padding: 16px;
     position: absolute;
     color: $light-font-color;
@@ -73,6 +75,9 @@ article {
     height: 40px;
     width: 40px;
   }
+}
+
+.gatsby-image-wrapper {
 }
 
 @media screen and (min-width: 768px) {
