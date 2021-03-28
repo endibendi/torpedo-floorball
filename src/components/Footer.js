@@ -24,6 +24,8 @@ const Footer = () => {
               <a
                 href="https://www.facebook.com/torpedofloorball"
                 rel="noopener noreferrer nofollow"
+                aria-label="Facebook"
+                target="_blank"
               >
                 <FaFacebookSquare />
               </a>
