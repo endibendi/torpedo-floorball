@@ -45,18 +45,32 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-with-attributes`,
       options: {
         fonts: [
           `roboto\:400,500,700`,
           `Raleway\:700,800`,
-          // `source sans pro\:300,400,400i,700`,
-          // you can also specify font weights and styles
+          // `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
         ],
-        preconnect: true,
         display: "swap",
+        attributes: {
+          rel: "stylesheet preload prefetch",
+        },
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       `roboto\:400,500,700`,
+    //       `Raleway\:700,800`,
+    //       // `source sans pro\:300,400,400i,700`,
+    //       // you can also specify font weights and styles
+    //     ],
+    //     preconnect: true,
+    //     display: "swap",
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
