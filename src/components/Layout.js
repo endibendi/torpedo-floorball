@@ -10,7 +10,6 @@ const Layout = ({ children }) => {
 
   const toggle = () => {
     setIsopen(!isOpen)
-    console.log(isOpen)
   }
 
   return (
