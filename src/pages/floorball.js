@@ -1,12 +1,12 @@
 import * as React from "react"
 import { Layout } from "../components"
-import SEO from "../components/_seo"
+import Seo from "../components/_seo"
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../styles/floorball.module.scss"
 
 const Floorball = () => (
   <Layout>
-    <SEO title="Floorball" />
+    <Seo title="Floorball" />
     <div className="container">
       <h1>Floorball</h1>
     </div>

@@ -1,10 +1,10 @@
 import * as React from "react"
 import { Layout, IndexHero, AllHir } from "../components"
-import SEO from "../components/_seo"
+import Seo from "../components/_seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Főoldal" />
+    <Seo title="Főoldal" />
     <IndexHero />
     <div className="container">
       <AllHir />

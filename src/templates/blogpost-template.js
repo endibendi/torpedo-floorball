@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Layout } from "../components"
-import SEO from "../components/_seo"
+import Seo from "../components/_seo"
 
 const blogpostTemplate = ({ data }) => {
   const {
@@ -14,7 +14,7 @@ const blogpostTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} image={postKep.gatsbyImageData.images.fallback.src} />
+      <Seo title={title} image={postKep.gatsbyImageData.images.fallback.src} />
       <GatsbyImage
         image={postKep.gatsbyImageData}
         alt="article image alt"

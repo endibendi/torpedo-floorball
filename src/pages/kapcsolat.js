@@ -1,12 +1,12 @@
 import * as React from "react"
 import { Layout } from "../components"
-import SEO from "../components/_seo"
+import Seo from "../components/_seo"
 
 import * as styles from "../styles/kapcsolat.module.scss"
 
 const Kapcsolat = () => (
   <Layout>
-    <SEO title="Kapcsolat" />
+    <Seo title="Kapcsolat" />
     <div className="container">
       <h1>Kapcsolat</h1>
     </div>

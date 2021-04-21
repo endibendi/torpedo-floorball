@@ -1,12 +1,12 @@
 import * as React from "react"
 import { Layout } from "../components"
-import SEO from "../components/_seo"
+import Seo from "../components/_seo"
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../styles/csapat.module.scss"
 
 const Csapat = () => (
   <Layout>
-    <SEO title="A csapat" />
+    <Seo title="A csapat" />
     <div className="container">
       <h1>A csapat</h1>
     </div>

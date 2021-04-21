@@ -1,11 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { Layout } from "../components"
-import SEO from "../components/_seo"
+import Seo from "../components/_seo"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404" />
+    <Seo title="404" />
     <div className="container">
       <h1>404: Not Found</h1>
       <p>A keresett oldal nem található!</p>
