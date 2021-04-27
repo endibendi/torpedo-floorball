@@ -1,7 +1,9 @@
 # my manually set redirects
-http://torpedo-demo-prod.netlify.app* https://www.torpedofloorball.hu//:splat 301!
+http://torpedo-demo-prod.netlify.app* https://www.torpedofloorball.hu/:splat 301!
 https://torpedo-demo-prod.netlify.app/* https://www.torpedofloorball.hu/:splat 301!
 http://torpedofloorball.hu/index.php?pg=gallery&folder_change=16 https://www.torpedofloorball.hu/:splat 301!
-http://torpedofloorball.hu/index.php?pg=gallery&root_folder https://torpedofloorball.hu/ 301!
-http://torpedofloorball.hu/csapattortenet http://torpedofloorball.hu/csapat 301!
-https://www.torpedofloorball.hu/:splat?pg=forgot_password https://torpedofloorball.hu/ 301!
+http://torpedofloorball.hu/index.php?pg=gallery&root_folder https://torpedofloorball.hu/:splat 301!
+http://torpedofloorball.hu/csapattortenet http://torpedofloorball.hu/csapat/:splat 301!
+https://www.torpedofloorball.hu/:splat?pg=forgot_password https://torpedofloorball.hu/:splat 301!
+https://www.torpedofloorball.hu/:splat?pg=insert_user https://torpedofloorball.hu/:splat 301!
+https://www.torpedofloorball.hu/:splat?pg=forum https://torpedofloorball.hu/:splat 301!
