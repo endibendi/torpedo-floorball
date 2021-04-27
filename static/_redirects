@@ -1,0 +1,5 @@
+# my manually set redirects
+http://torpedo-demo-prod.netlify.app* https://www.torpedofloorball.hu//:splat 301!
+https://torpedo-demo-prod.netlify.app/* https://www.torpedofloorball.hu/:splat 301!
+http://torpedofloorball.hu/index.php?pg=gallery&folder_change=16 https://www.torpedofloorball.hu/:splat 301!
+http://torpedofloorball.hu/index.php?pg=gallery&root_folder http://torpedofloorball.hu/ 301!
