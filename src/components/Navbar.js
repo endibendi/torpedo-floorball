@@ -10,7 +10,12 @@ const Navbar = ({ toggle }) => {
       <div className={styles.navContainer}>
         <div className={styles.navCenter}>
           <Link to="/" className={styles.navLogo}>
-            <StaticImage src="../images/logo.svg" alt="logo" />
+            <StaticImage
+              src="../images/logo.svg"
+              alt="logo"
+              loading="eager"
+              placeholder="blurred"
+            />
           </Link>
           <div className={styles.linksContainer}>
             <ul>
