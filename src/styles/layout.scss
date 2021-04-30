@@ -92,6 +92,12 @@ button {
   color: lighten($color: $primary-color, $amount: 20);
 }
 
+.iframe-wrapper {
+  width: 560px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
 // font media
 @media screen and (min-width: 700px) {
   h1 {

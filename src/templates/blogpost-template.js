@@ -2,15 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Layout } from "../components"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Seo from "../components/_seo"
 
 const blogpostTemplate = ({ data }) => {
-  const {
-    datum,
-    title,
-    postKep,
-    postszoveg: { postszoveg },
-  } = data.post
+  const { datum, title, postKep, videoUrl, text } = data.post
 
   return (
     <Layout>
@@ -27,7 +23,21 @@ const blogpostTemplate = ({ data }) => {
           <h1>{title}</h1>
           <span>{datum}</span>
           <div style={{ padding: "20px 0 65px 0" }}>
-            <p>{postszoveg}</p>
+            {videoUrl && (
+              <div className="iframe-wrapper">
+                <iframe
+                  className="video"
+                  width="560"
+                  height="315"
+                  src={videoUrl}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            )}
+            {renderRichText(text)}
           </div>
         </div>
       </section>
@@ -35,14 +45,14 @@ const blogpostTemplate = ({ data }) => {
   )
 }
 
+export default blogpostTemplate
+
 export const query = graphql`
   query getSinglePost($slug: String) {
     post: contentfulBlogPoszt(slug: { eq: $slug }) {
       datum(formatString: "YYYY MM DD")
       title
-      postszoveg {
-        postszoveg
-      }
+      videoUrl
       postKep {
         gatsbyImageData(
           quality: 100
@@ -51,8 +61,9 @@ export const query = graphql`
           height: 400
         )
       }
+      text: posztSzoveg {
+        raw
+      }
     }
   }
 `
-
-export default blogpostTemplate
