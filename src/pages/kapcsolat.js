@@ -11,7 +11,7 @@ const Kapcsolat = () => (
       <h1>Kapcsolat</h1>
     </div>
 
-    <section className={styles.contactSection}>
+    <section>
       <div className="container">
         <div className={styles.contactInfo}>
           <h2>Felnőtt csapat</h2>

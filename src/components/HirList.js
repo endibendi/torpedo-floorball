@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
 
 import * as styles from "./hirek.module.scss"
@@ -16,14 +16,27 @@ const HirList = ({ posts = [] }) => {
 
             return (
               <article key={id} className="articleCard">
-                <GatsbyImage
+                {!postKep.gatsbyImageData ? (
+                  <StaticImage src="../images/csapat.jpg" />
+                ) : (
+                  <GatsbyImage
+                    image={postKep.gatsbyImageData}
+                    alt="blogposzt borító kép"
+                    className={styles.articleImg}
+                    objectFit="cover"
+                    objectPosition="center 40%"
+                    quality="100"
+                  />
+                )}
+
+                {/* <GatsbyImage
                   image={postKep.gatsbyImageData}
                   alt="blogposzt borító kép"
                   className={styles.articleImg}
                   objectFit="cover"
                   objectPosition="center 40%"
                   quality="100"
-                />
+                /> */}
                 <Link to={`/hirek/${slug}`} className={styles.infoLink}>
                   <div className={styles.info}>
                     <h3>{title}</h3>

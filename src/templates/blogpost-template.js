@@ -5,19 +5,32 @@ import { Layout } from "../components"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Seo from "../components/_seo"
 
+import * as styles from "../styles/template.module.scss"
+
 const blogpostTemplate = ({ data }) => {
   const { datum, title, postKep, videoUrl, text } = data.post
+
+  const options = {
+    renderText: text => {
+      return text.split("\n").reduce((children, textSegment, index) => {
+        return [...children, index > 0 && <br key={index} />, textSegment]
+      }, [])
+    },
+  }
 
   return (
     <Layout>
       <Seo title={title} image={postKep.gatsbyImageData.images.fallback.src} />
-      <GatsbyImage
-        image={postKep.gatsbyImageData}
-        alt="article image alt"
-        // className={styles.articleImg}
-        objectFit="cover"
-        objectPosition="center center"
-      />
+      {/* {postKep.gatsbyImageData && (
+        <GatsbyImage
+          image={postKep.gatsbyImageData}
+          alt="article image alt"
+          className={styles.articleImg}
+          objectFit="cover"
+          quality="100"
+          objectPosition="center 30%"
+        />
+      )} */}
       <section>
         <div className="container">
           <h1>{title}</h1>
@@ -37,7 +50,7 @@ const blogpostTemplate = ({ data }) => {
                 ></iframe>
               </div>
             )}
-            {renderRichText(text)}
+            {renderRichText(text, options)}
           </div>
         </div>
       </section>
