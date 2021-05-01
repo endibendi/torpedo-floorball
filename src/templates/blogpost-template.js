@@ -1,22 +1,36 @@
 import React from "react"
 import { graphql } from "gatsby"
-// import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { Layout } from "../components"
+import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Seo from "../components/_seo"
 
 // import * as styles from "../styles/template.module.scss"
 
+const options = {
+  renderText: text => {
+    return text.split("\n").reduce((children, textSegment, index) => {
+      return [...children, index > 0 && <br key={index} />, textSegment]
+    }, [])
+  },
+  renderNode: {
+    [BLOCKS.EMBEDDED_ASSET]: node => {
+      return (
+        <GatsbyImage
+          image={node.data.target.gatsbyImageData}
+          alt="article image alt"
+          objectFit="cover"
+          quality="100"
+          objectPosition="center 30%"
+        />
+      )
+    },
+  },
+}
+
 const blogpostTemplate = ({ data }) => {
   const { datum, title, postKep, videoUrl, text } = data.post
-
-  const options = {
-    renderText: text => {
-      return text.split("\n").reduce((children, textSegment, index) => {
-        return [...children, index > 0 && <br key={index} />, textSegment]
-      }, [])
-    },
-  }
 
   return (
     <Layout>
@@ -76,6 +90,18 @@ export const query = graphql`
       }
       text: posztSzoveg {
         raw
+        references {
+          ... on ContentfulAsset {
+            contentful_id
+            __typename
+          }
+          gatsbyImageData(
+            quality: 100
+            placeholder: TRACED_SVG
+            layout: CONSTRAINED
+            height: 400
+          )
+        }
       }
     }
   }
