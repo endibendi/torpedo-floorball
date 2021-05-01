@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+// import { GatsbyImage } from "gatsby-plugin-image"
 import { Layout } from "../components"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Seo from "../components/_seo"
 
-import * as styles from "../styles/template.module.scss"
+// import * as styles from "../styles/template.module.scss"
 
 const blogpostTemplate = ({ data }) => {
   const { datum, title, postKep, videoUrl, text } = data.post

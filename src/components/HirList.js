@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
+// import { FaAngleLeft, FaAngleRight } from "react-icons/fa"
 
 import * as styles from "./hirek.module.scss"
 
