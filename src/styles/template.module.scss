@@ -17,3 +17,9 @@
     left: 0;
   }
 }
+
+.blogpost-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

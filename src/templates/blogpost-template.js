@@ -69,7 +69,10 @@ const blogpostTemplate = ({ data }) => {
         <div className="container">
           <h1>{title}</h1>
           <span>{datum}</span>
-          <div style={{ padding: "65px 0 120px 0" }}>
+          <div
+            style={{ padding: "65px 0 120px 0" }}
+            className={styles.blogpostContainer}
+          >
             {renderRichText(text, options)}
           </div>
         </div>
