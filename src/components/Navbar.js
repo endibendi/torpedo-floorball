@@ -30,8 +30,13 @@ const Navbar = ({ toggle }) => {
                 </Link>
               </li>
               <li>
+                <Link to="/tortenet" activeClassName="active">
+                  történet
+                </Link>
+              </li>
+              <li>
                 <Link to="/csapat" activeClassName="active">
-                  a csapat
+                  csapat
                 </Link>
               </li>
               <li>

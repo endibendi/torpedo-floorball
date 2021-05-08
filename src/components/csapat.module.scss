@@ -1,0 +1,39 @@
+.csapat-wrapper {
+  margin-top: 31px;
+  margin-bottom: 25px;
+
+  .article-wrapper {
+    margin-top: 38px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+
+    article {
+      margin: 0 auto;
+      max-height: 400px;
+      max-width: 400px;
+      box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.1);
+
+      .article-img {
+        max-height: 80%;
+      }
+
+      .article-info {
+        padding-top: 10px;
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .csapat-wrapper .article-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .csapat-wrapper .article-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

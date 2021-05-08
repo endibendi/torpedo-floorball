@@ -29,6 +29,11 @@ const Sidebar = ({ isOpen, toggle }) => {
               </Link>
             </li>
             <li>
+              <Link to="/tortenet" activeClassName="active">
+                a tortenet
+              </Link>
+            </li>
+            <li>
               <Link to="/csapat" activeClassName="active">
                 a csapat
               </Link>

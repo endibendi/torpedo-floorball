@@ -92,8 +92,9 @@ export const query = graphql`
         gatsbyImageData(
           quality: 100
           placeholder: TRACED_SVG
-          layout: CONSTRAINED
-          height: 400
+          layout: FULL_WIDTH
+          height: 600
+          width: 1440
         )
       }
       text: posztSzoveg {
@@ -106,7 +107,7 @@ export const query = graphql`
           gatsbyImageData(
             quality: 100
             placeholder: TRACED_SVG
-            layout: CONSTRAINED
+            layout: FULL_WIDTH
             height: 400
           )
         }

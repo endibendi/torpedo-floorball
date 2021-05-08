@@ -8,8 +8,10 @@
   position: relative;
   display: block;
   width: 100%;
+  height: 100%;
 
   iframe {
+    flex: 1 1 auto;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -18,8 +20,9 @@
   }
 }
 
-.blogpost-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (min-width: 700px) {
+  .blogpost-container {
+    margin: 0 auto;
+    max-width: 80%;
+  }
 }
