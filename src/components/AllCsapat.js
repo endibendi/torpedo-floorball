@@ -4,7 +4,7 @@ import CsapatList from "./CsapatList"
 
 export const query = graphql`
   {
-    allContentfulCsapatTagok {
+    allContentfulCsapatTagok(sort: { fields: szerep }) {
       nodes {
         nev
         szerep
