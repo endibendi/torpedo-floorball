@@ -4,6 +4,7 @@
 
   .article-wrapper {
     margin-top: 38px;
+
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr;
@@ -19,6 +20,7 @@
       }
 
       .article-info {
+        min-height: 20%;
         padding-top: 10px;
         padding-left: 1rem;
       }
