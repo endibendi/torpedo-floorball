@@ -6,7 +6,8 @@ const CsapatList = ({ tagok = [] }) => {
   console.log(tagok)
   return (
     <div className={styles.csapatWrapper}>
-     <div className={styles.articleWrapper}>
+      <h3 className={styles.poszt}>Kapusok:</h3>
+      <div className={styles.articleWrapper}>
         {tagok.map((tag, id) => {
           const { nev, szerep, tagkep } = tag
           if (szerep === "kapus") {
@@ -29,6 +30,7 @@ const CsapatList = ({ tagok = [] }) => {
           }
         })}
       </div>
+      <h3 className={styles.poszt}>Védők:</h3>
       <div className={styles.articleWrapper}>
         {tagok.map((tag, id) => {
           const { nev, szerep, tagkep } = tag
@@ -52,6 +54,7 @@ const CsapatList = ({ tagok = [] }) => {
           }
         })}
       </div>
+      <h3 className={styles.poszt}>Támadók:</h3>
       <div className={styles.articleWrapper}>
         {tagok.map((tag, id) => {
           const { nev, szerep, tagkep } = tag
