@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Layout, IndexHero, AllHir } from "../components"
+import { Layout, IndexHero, AllHir, Tamogatok } from "../components"
 import Seo from "../components/_seo"
 
 const IndexPage = () => (
@@ -8,6 +8,7 @@ const IndexPage = () => (
     <IndexHero />
     <div className="container">
       <AllHir />
+      <Tamogatok />
     </div>
   </Layout>
 )
