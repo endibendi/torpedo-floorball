@@ -1,7 +1,7 @@
 import React from "react"
 import * as styles from "./footer.module.scss"
 import { StaticImage } from "gatsby-plugin-image"
-import { FaFacebookSquare } from "react-icons/fa"
+import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -28,6 +28,14 @@ const Footer = () => {
                 target="_blank"
               >
                 <FaFacebookSquare />
+              </a>
+              <a
+                href="https://www.instagram.com/torpedofloorball"
+                rel="noopener noreferrer nofollow"
+                aria-label="Instagram"
+                target="_blank"
+              >
+                <FaInstagramSquare />
               </a>
             </div>
           </div>
