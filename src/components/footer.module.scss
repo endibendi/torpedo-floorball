@@ -46,6 +46,7 @@ footer {
 
   .footer-info-container {
     padding-left: 10px;
+    margin-bottom: 10px;
 
     h5 {
       font-weight: 500;
@@ -64,11 +65,20 @@ footer {
   }
 }
 
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
 footer .img-container {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+  }
+
   footer {
     .footer-info {
       justify-content: flex-start;
