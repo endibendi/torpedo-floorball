@@ -34,7 +34,7 @@ const blogpostTemplate = ({ data }) => {
           <GatsbyImage
             image={node.data.target.gatsbyImageData}
             alt="article image"
-            objectFit="cover"
+            objectFit="contain"
             quality="100"
             objectPosition="center 30%"
           />
