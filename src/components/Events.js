@@ -26,9 +26,9 @@ const Events = () => {
         return (
           <div className="esemeny">
             <h5>{esemenyNeve}</h5>
-            <p>{resztvevok}</p>
-            <p>{idopont}</p>
-            <p>{helyszin}</p>
+            <p>{resztvevok ? resztvevok : ""}</p>
+            <p>{idopont ? idopont : ""}</p>
+            <p>{helyszin ? helyszin : ""}</p>
           </div>
         )
       })}

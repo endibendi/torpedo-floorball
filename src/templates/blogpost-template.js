@@ -108,7 +108,7 @@ export const query = graphql`
             quality: 100
             placeholder: TRACED_SVG
             layout: FULL_WIDTH
-            height: 400
+            height: 500
           )
         }
       }
