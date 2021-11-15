@@ -14,7 +14,7 @@ const Footer = () => {
               <div className={styles.footerInfoContainer}>
                 <h4>Edzések</h4>
                 <h5>Felnőtt edzésidőpontok:</h5>
-                <p>Hétfő: 19:00 - 20:30</p>
+                <p>Hétfő: 20:00-21:30</p>
                 <p>Csütörtök: 19:00-20:30</p>
                 <h5 className={styles.pt8}>Helyszín:</h5>
                 <p>ATTE Sportcsarnok</p>

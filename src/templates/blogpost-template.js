@@ -35,6 +35,7 @@ const blogpostTemplate = ({ data }) => {
             image={node.data.target.gatsbyImageData}
             alt="article image"
             objectFit="contain"
+            layout="fullWidth"
             quality="100"
             objectPosition="center 30%"
           />
@@ -93,8 +94,8 @@ export const query = graphql`
           quality: 100
           placeholder: TRACED_SVG
           layout: FULL_WIDTH
-          height: 600
-          width: 1440
+          height: 1600
+          width: 2400
         )
       }
       text: posztSzoveg {
@@ -108,7 +109,6 @@ export const query = graphql`
             quality: 100
             placeholder: TRACED_SVG
             layout: FULL_WIDTH
-            height: 500
           )
         }
       }
