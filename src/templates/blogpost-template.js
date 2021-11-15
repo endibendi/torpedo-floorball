@@ -38,6 +38,7 @@ const blogpostTemplate = ({ data }) => {
             layout="fullWidth"
             quality="100"
             objectPosition="center 30%"
+            style={{ marginBottom: "60px" }}
           />
         )
       },
