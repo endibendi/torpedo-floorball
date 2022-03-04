@@ -27,7 +27,7 @@ const CsapatList = ({ tagok = [] }) => {
                 </div>
               </article>
             )
-          }
+          } else return <></>
         })}
       </div>
       <h3 className={styles.poszt}>Védők:</h3>
@@ -51,7 +51,7 @@ const CsapatList = ({ tagok = [] }) => {
                 </div>
               </article>
             )
-          }
+          } else return <></>
         })}
       </div>
       <h3 className={styles.poszt}>Támadók:</h3>
@@ -75,7 +75,7 @@ const CsapatList = ({ tagok = [] }) => {
                 </div>
               </article>
             )
-          }
+          } else return <></>
         })}
       </div>
     </div>

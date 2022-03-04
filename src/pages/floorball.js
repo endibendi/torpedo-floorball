@@ -22,7 +22,6 @@ const Floorball = () => (
             src="../images/floorball-player.png"
             alt="floorball játékos"
             objectFit="cover"
-            placeholder="tracedSVG"
             loading="eager"
             style={{ overflow: "visible" }}
             className={styles.img}
@@ -59,7 +58,6 @@ const Floorball = () => (
             <StaticImage
               src="../images/floorballball.png"
               alt="floorball labda"
-              placeholder="tracedSVG"
               layout="fixed"
               width={327}
               height={327}

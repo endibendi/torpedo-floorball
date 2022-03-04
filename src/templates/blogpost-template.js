@@ -54,7 +54,7 @@ const blogpostTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title={title} image={postKep.gatsbyImageData.images.fallback.src} />
+      <Seo title={title} image={postKep.gatsbyImageData.images} />
       {/*
        --- Ez lenne a post borito kepe ---
        {postKep.gatsbyImageData && (
@@ -106,11 +106,7 @@ export const query = graphql`
             contentful_id
             __typename
           }
-          gatsbyImageData(
-            quality: 100
-            placeholder: TRACED_SVG
-            layout: FULL_WIDTH
-          )
+          gatsbyImageData(quality: 100, layout: FULL_WIDTH)
         }
       }
     }
