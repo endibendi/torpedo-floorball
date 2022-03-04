@@ -14,7 +14,6 @@ const query = graphql`
           gatsbyImageData(
             quality: 100
             layout: CONSTRAINED
-            placeholder: TRACED_SVG
             height: 600
             width: 387
             resizingBehavior: FILL
