@@ -35,6 +35,11 @@ const Navbar = ({ toggle }) => {
                 </Link>
               </li>
               <li>
+                <Link to="/utanpotlas" activeClassName="active">
+                  utánpótlás
+                </Link>
+              </li>
+              <li>
                 <Link to="/csapat" activeClassName="active">
                   csapat
                 </Link>

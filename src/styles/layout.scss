@@ -34,6 +34,14 @@ a {
   text-decoration: none;
 }
 
+.link {
+  color: $primary-color;
+}
+
+.image-container {
+  max-width: 360px;
+}
+
 h1 {
   color: $primary-color;
   margin-top: 20px;
