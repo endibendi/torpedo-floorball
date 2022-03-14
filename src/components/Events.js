@@ -23,8 +23,11 @@ const Events = () => {
     <div>
       {esemenyek.map((esemeny, id) => {
         const { esemenyNeve, helyszin, idopont, resztvevok } = esemeny
+        if (esemenyNeve === "teszt") {
+          return <></>
+        }
         return (
-          <div className="esemeny">
+          <div className="esemeny" key={id}>
             <h5>{esemenyNeve}</h5>
             <p>{resztvevok ? resztvevok : ""}</p>
             <p>{idopont ? idopont : ""}</p>
