@@ -1,8 +1,10 @@
 import { Link } from "gatsby"
+import * as React from "react"
 import { FaTimes } from "react-icons/fa"
 import * as styles from "./sidebar.module.scss"
 
 const Sidebar = ({ isOpen, toggle }) => {
+  void React
   return (
     <aside
       className={styles.sidebar + " " + (isOpen ? styles.showSidebar : "")}
