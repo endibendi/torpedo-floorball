@@ -2,12 +2,14 @@ import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
+import React from "react"
 import { Layout } from "../components"
 import Seo from "../components/_seo"
 
 import * as styles from "../styles/template.module.scss"
 
 const blogpostTemplate = ({ data }) => {
+  void React
   const options = {
     renderNode: {
       [INLINES.HYPERLINK]: node => {
