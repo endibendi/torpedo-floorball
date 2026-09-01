@@ -1,9 +1,8 @@
-import React from "react"
+import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { Layout } from "../components"
-import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
+import { Layout } from "../components"
 import Seo from "../components/_seo"
 
 import * as styles from "../styles/template.module.scss"
