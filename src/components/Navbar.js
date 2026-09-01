@@ -1,4 +1,3 @@
-import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { FaBars } from "react-icons/fa"
@@ -32,11 +31,6 @@ const Navbar = ({ toggle }) => {
               <li>
                 <Link to="/tortenet" activeClassName="active">
                   történet
-                </Link>
-              </li>
-              <li>
-                <Link to="/utanpotlas" activeClassName="active">
-                  utánpótlás
                 </Link>
               </li>
               <li>
